@@ -1,0 +1,60 @@
+# general config
+
+# titles
+articlelist-title-format "Articles in feed '%T' (%u unread, %t total)"
+feedlist-title-format "Feeds (%u unread, %t total)%?T? - tag `%T'&?"
+itemview-title-format "Article '%T'"
+
+feed-sort-order title
+datetime-format %F
+
+#external-url-viewer "urlscan"
+
+browser linkhandler
+
+reload-threads 2
+text-width 80
+
+# podbot config
+download-path "~/Podcasts/%h/%n"
+max-downloads 3
+player "mpv"
+
+
+# keybindings
+
+unbind-key D # delete-article
+unbind-key ^D # delete-all-articles
+unbind-key $ # purge-deleted
+
+bind-key ^R toggle-article-read
+bind-key j down
+bind-key k up
+bind-key g home
+bind-key G end
+# bind-key D pb-download
+bind-key U show-urls
+
+
+# macros
+
+# TODO: use linkhandler and remove macro
+macro v set browser "setsid nohup mpv %u" ; open-in-browser ; set browser linkhandler
+macro a set browser "setsid nohup mpv --no-video %u" ; open-in-browser ; set browser linkhandler
+# macro k set browser "youtube-dl -o '~/Videos/youtube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s' --metadata-from-title- '%(title)' --add-metadata"
+
+
+# themeing
+
+color listnormal cyan default
+color listfocus black yellow standout bold
+color listnormal_unread blue default
+color listfocus_unread yellow default bold
+color info red black bold
+color article cyan default
+
+# TODO: `Podcast Download URL` coloring
+highlight article "^(Feed|Title|Author|Link|Date):" magenta default default
+highlight article "https?://[^ ]+" yellow default underline
+highlight article "www.[^ ]+" yellow default underline
+highlight article "[\w]+.(com|org)(\/\w+)?" yellow default underline
