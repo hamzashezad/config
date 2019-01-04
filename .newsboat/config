@@ -10,7 +10,7 @@ datetime-format %F
 
 #external-url-viewer "urlscan"
 
-browser linkhandler
+browser linkhandler # https://github.com/LukeSmithxyz/voidrice/blob/f79911f67c5151c05c480dd05707ea9856f7ac08/.scripts/tools/linkhandler
 
 reload-threads 2
 text-width 80
