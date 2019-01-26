@@ -1,11 +1,10 @@
 # text
 # twitter
 https://twitrss.me/twitter_user_to_rss/?user=ow "~Owen Williams (tw)" "twitter"
-https://twitrss.me/twitter_user_to_rss/?user=noopkat "noopkat (tw)" "twitter"
+https://twitrss.me/twitter_user_to_rss/?user=noopkat "~noopkat (tw)" "twitter"
 
 # blogs
 https://daringfireball.net/feeds/main "text" "tech"
-
 
 https://xkcd.com/rss.xml "~xkcd" "comics"
 https://explainxkcd.com/rss.xml "comics"

@@ -1,24 +1,22 @@
 " Plugins
 call plug#begin('~/.vim/plugged')
 	Plug 'sheerun/vim-polyglot'    " <|
-	Plug 'airblade/vim-gitgutter'  "  | essentials
-	Plug 'scrooloose/nerdtree'     "  |
-	Plug 'vim-airline/vim-airline' " <|
-	Plug 'w0rp/ale' " linter
+	Plug 'airblade/vim-gitgutter'  "  |
+	Plug 'scrooloose/nerdtree'     "  | essentials
+	Plug 'vim-airline/vim-airline' "  |
+	Plug 'w0rp/ale'                " <|
+	Plug 'vim-airline/vim-airline-themes'
 	Plug 'majutsushi/tagbar'
 	Plug 'fxn/vim-monochrome'
-	Plug 'arcticicestudio/nord-vim'
-	Plug 'kristijanhusak/vim-hybrid-material'
-	Plug 'pangloss/vim-javascript'
-	Plug 'mxw/vim-jsx'
 	Plug 'xuhdev/vim-latex-live-preview', { 'for': 'tex' }
-	Plug 'lervag/vimtex'
-	Plug 'elixir-editors/vim-elixir'
 call plug#end()
 
 " Plugin settings
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
+let g:NERDTreeRespectWildIgnore = 1
+
+let g:airline_theme = 'bubblegum'
 
 " Settings
 set encoding=utf8
@@ -57,16 +55,18 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*.class
 
 " remove trailing whitespaces and ^M chars
 augroup ws
-  au!
-  autocmd FileType c,cpp,java,php,js,json,css,scss,sass,py,rb,coffee,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
+	au!
+	autocmd FileType c,cpp,java,php,js,json,css,scss,sass,py,rb,coffee,python,twig,xml,yml autocmd BufWritePre <buffer> :call setline(1,map(getline(1,"$"),'substitute(v:val,"\\s\\+$","","")'))
 augroup end
 
 " whipin your own colorscheme
 set background=dark
 set t_Co=256
-colorscheme monochrome " tokyo-metro || iceberg || monochrome || nord
+colorscheme monochrome " green || tokyo-metro || iceberg || monochrome
+
 highlight ColorColumn ctermbg=236 ctermfg=99
-"highlight Comment ctermfg=grey
+highlight Comment ctermfg=8
+highlight LineNr ctermfg=8
 highlight CursorLine ctermbg=236
 set colorcolumn+=81
 
@@ -89,11 +89,26 @@ map <C-j> :wincmd j<CR>
 map <C-k> :wincmd k<CR>
 map <C-l> :wincmd l<CR>
 map <C-h> :wincmd h<CR>
+
 nmap <C-p> :TagbarToggle<CR>
 nmap <silent> <BS><BS> mz:call TrimTrailingWS()<CR>`z
 
+" simple // commenting
+" TODO: add functionality to comment according to filetype
+vnoremap <silent> ;/ :call ToggleComment()<CR>
+
+vnoremap <silent> ;/ :call ToggleComment()<cr>
+
+function! ToggleComment()
+	if matchstr(getline(line(".")),'^\s*\/\/.*$') == ''
+		:execute "s:^://:"
+	else
+		:execute "s:^\s*//::"
+	endif
+endfunction
+
 function! TrimTrailingWS ()
-    if search('\s\+$', 'cnw')
-        :%s/\s\+$//g
-    endif
+	if search('\s\+$', 'cnw')
+		:%s/\s\+$//g
+	endif
 endfunction
