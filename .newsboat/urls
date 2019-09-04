@@ -1,55 +1,53 @@
 # text
 # twitter
-https://twitrss.me/twitter_user_to_rss/?user=ow "~Owen Williams (tw)" "twitter"
-https://twitrss.me/twitter_user_to_rss/?user=noopkat "~noopkat (tw)" "twitter"
+https://twitrss.me/mobile_twitter_to_rss/?user=ow "~Owen Williams (tw)" "twitter"
+https://twitrss.me/mobile_twitter_to_rss/?user=noopkat "~noopkat (tw)" "twitter"
+https://twitrss.me/mobile_twitter_to_rss/?user=vladsavov "~vladsavov (tw)" "twitter"
+#https://twitrss.me/twitter_to_rss/?user=ow "~Owen Williams (tw)" "twitter"
+#https://twitrss.me/twitter_to_rss/?user=noopkat "~noopkat (tw)" "twitter"
+#https://twitrss.me/twitter_to_rss/?user=vladsavov "~vladsavov (tw)" "twitter"
 
 # blogs
 https://daringfireball.net/feeds/main "text" "tech"
+https://perryprojects.blogspot.com/feeds/posts/default?alt=rss "text" "electronics"
+http://dangerousprototypes.com/feed "text" "electronics"
+https://boingboing.net/rss "text"
 
 https://xkcd.com/rss.xml "~xkcd" "comics"
-https://explainxkcd.com/rss.xml "comics"
-
-# podcasts
-
-http://lorepodcast.libsyn.com/rss "~Lore Podcast" "podcast"
-https://rss.acast.com/griefcast "podcast"
+#https://explainxkcd.com/rss.xml "comics"
 
 # videos
 
 # tech related
 https://www.youtube.com/feeds/videos.xml?channel_id=UCeeFfhMcJa1kjtfZAGskOCA "~TechLinked" "youtube" "tech" "news"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~Linus Tech Tips" "youtube" "tech"
-https://www.youtube.com/feeds/videos.xml?channel_id=UChIs72whgZI9w6d6FhwGGHA "~Gamers Nexus" "youtube" "tech"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~gotbletu" "youtube" "tech"
+#https://www.youtube.com/feeds/videos.xml?channel_id=UChIs72whgZI9w6d6FhwGGHA "~Gamers Nexus" "youtube" "tech"
+#https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~gotbletu" "youtube" "tech"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~Luke Smith" "youtube" "tech"
 
 # keyboards
+https://thomasbaart.nl/feed "keyboards"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCD0y51PJfvkZNe3y3FR5riw "~Chyrosran22" "youtube" "keyboards"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCtLJJRsmtUgCWLj_Ud9URfA "~Chokkan" "youtube" "keyboards"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCMHXMAeKkI6HXlPfLiYvo9g "~Nathan Kim" "youtube" "keyboards"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCdfrYMwAJ8LHvy8-j_WIxAw "~MechMerlin" "youtube" "keyboards"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCWq3V2TN-GPhyKAGTBCvSZQ "~Mekanisk" "youtube" "keyboards"
+#https://www.youtube.com/feeds/videos.xml?channel_id=UCdfrYMwAJ8LHvy8-j_WIxAw "~MechMerlin" "youtube" "keyboards"
+#https://www.youtube.com/feeds/videos.xml?channel_id=UCWq3V2TN-GPhyKAGTBCvSZQ "~Mekanisk" "youtube" "keyboards"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCllGwtW6scxAjM28fIgEozg "~TaeKeyboards" "youtube" "keyboards"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9-y-6csu5WGm29I7JiwpnA "~Computerphile" "youtube" "tech"
 
 # shows
-https://www.youtube.com/feeds/videos.xml?channel_id=UC4PooiX37Pld1T8J5SYT-SQ "~Good Mythical Morning" "youtube" "show"
-https://www.youtube.com/feeds/videos.xml?channel_id=UCzpCc5n9hqiVC7HhPwcIKEg "~Good Mythical MORE" "youtube" "show"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9gFih9rw0zNCK3ZtoKQQyA "~Jenna Marbles" "youtube" "show"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC-lHJZR3Gqxm24_Vd_AJ5Yw "~PewDiePie" "youtube" "show"
-https://www.youtube.com/feeds/videos.xml?channel_id=UC2hgRzkWZmGkigghCUXDzVA "~Sir Stevo Timothy" "youtube" "show"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6nSFpj9HTCZ5t-N3Rm3-HA "~Vsauce" "youtube" "show"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCqmugCqELzhIMNYnsjScXXw "~Vsauce2" "youtube" "show"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCwmFOfFuvRPI112vR5DNnrA "~Vsauce3" "youtube" "show"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYwVxWpjeKFWwu8TML-Te9A "~Jim Can't Swim" "youtube" "show"
 
 # podcasts
 https://www.youtube.com/feeds/videos.xml?channel_id=UCAOwW6UWDZDFZ5meGS-lQhQ "~Jenna Julien" "youtube" "podcast"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCFo9mvW4ythx_tgT3NHaw-Q "~Junaid Akram" "youtube" "podcast"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzQUP1qoWDoEbmsQxvdjxgQ "~The Joe Rogan Experience" "podcast"
 
 # vlogs
 https://www.youtube.com/feeds/videos.xml?channel_id=UCZfPrUL62TN74Mmrn-O_pZQ "~Dan Mace" "youtube" "vlogs"
 https://www.youtube.com/feeds/videos.xml?channel_id=UC1KsxDW7hhfeq5QQmFtInIw "~julien solomita" "youtube" "vlogs"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCnHEz9DZ6EAof1-DaQGD_Xw "~PPPeter" "youtube" "vlogs"
 https://www.youtube.com/feeds/videos.xml?channel_id=UCKhK5Ysw9DpHNNEVSAu0yIA "~Ryan is Driving" "youtube" "vlogs"
-
-# general news
-https://www.youtube.com/feeds/videos.xml?channel_id=UChwwoeOZ3EJPobW83dgQfAg "~WeAreChange" "youtube" "news"

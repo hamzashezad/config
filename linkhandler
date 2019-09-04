@@ -16,7 +16,13 @@ case "$1" in
 	*mkv|*webm|*mp4|*gif|*youtube.com*|*youtu.be*|*hooktube.com*|*bitchute.com*)
 		nohup mpv -quiet "$1" >/dev/null 2>&1 & ;;
 	*png|*jpg|*jpe|*jpeg)
-		nohup feh "$1" >/dev/null 2>&1 & ;;
+		case $(uname) in
+			"Darwin")
+				nohup mpv --pause "$1" >/dev/null 2>&1 & ;;
+			*)
+				feh "$1" >/dev/null 2>&1 & ;;
+		esac
+		;;
 	*mp3|*flac|*opus|*mp3?source)
 		nohup tsp curl -LO "$1" >/dev/null 2>&1 & ;;
 	*springer.com*)

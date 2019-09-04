@@ -1,5 +1,12 @@
 # general config
 
+# notifications
+notify-always yes
+notify-program "~/.newsboat-notify.sh"
+notify-format "%d new articles"
+
+openbrowser-and-mark-jumps-to-next-unread yes
+
 # titles
 articlelist-title-format "Articles in feed '%T' (%u unread, %t total)"
 feedlist-title-format "Feeds (%u unread, %t total)%?T? - tag `%T'&?"
@@ -12,7 +19,6 @@ datetime-format %F
 
 browser linkhandler # https://github.com/LukeSmithxyz/voidrice/blob/f79911f67c5151c05c480dd05707ea9856f7ac08/.scripts/tools/linkhandler
 
-reload-threads 2
 text-width 80
 
 # podbot config
@@ -23,9 +29,10 @@ player "mpv"
 
 # keybindings
 
-unbind-key D # delete-article
-unbind-key ^D # delete-all-articles
-unbind-key $ # purge-deleted
+#unbind-key D # delete-article
+#unbind-key ^D # delete-all-articles
+#unbind-key $ # purge-deleted
+# unbind-key o # unbind and bind to o + C-r (so opens and marks and read)
 
 bind-key ^R toggle-article-read
 bind-key j down
@@ -34,6 +41,7 @@ bind-key g home
 bind-key G end
 # bind-key D pb-download
 bind-key U show-urls
+bind-key ^K rev-sort # reverse sort current list
 
 
 # macros
@@ -43,12 +51,11 @@ macro v set browser "setsid nohup mpv %u" ; open-in-browser ; set browser linkha
 macro a set browser "setsid nohup mpv --no-video %u" ; open-in-browser ; set browser linkhandler
 # macro k set browser "youtube-dl -o '~/Videos/youtube/%(uploader)s/%(upload_date)s - %(title)s.%(ext)s' --metadata-from-title- '%(title)' --add-metadata"
 
-
 # themeing
 
 color listnormal cyan default
 color listfocus black yellow standout bold
-color listnormal_unread blue default
+color listnormal_unread color27 default
 color listfocus_unread yellow default bold
 color info red black bold
 color article cyan default
